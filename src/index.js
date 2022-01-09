@@ -1,10 +1,11 @@
-const express = require("express");
+const express = require("express")
 
-const productController = require("./controllers/productController");
+const productControlar = require("./controlars/productControlar")
 
-const app = express();
+const app = express()
 
-app.use(express.json());
-app.use("/products", productController);
+app.use(express.json())
 
-module.exports = app;
+app.use("/products",productControlar)
+
+module.exports = app
